@@ -3,3 +3,27 @@
 <app-header></app-header>
 <app-recipes></app-recipes>
 <app-shopping-list></app-shopping-list>
+
+<!-- follow tutorial on video #50 -->
+
+<table> 
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>User</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Status</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.status}}</td>
+    </tr>
+  </tbody>
+</table>
